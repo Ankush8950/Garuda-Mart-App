@@ -8,7 +8,7 @@ import {BsSearch} from "react-icons/bs"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-saltpan h-20 p-10 sticky top-0 z-10">
+    <div className="navbar bg-saltpan h-20 p-10 sticky top-0 z-10 border-b-[1px]">
       <div className="navbar-start">
         <NavLink
           to="/"

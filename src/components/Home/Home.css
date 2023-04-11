@@ -24,3 +24,17 @@
         transform: scale(2.5);
     }
 }
+
+
+.slider{
+    width: 98% !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.slick-next:hover, .slick-next:focus {
+    color: red;
+    outline: none;
+    background: transparent;
+}
