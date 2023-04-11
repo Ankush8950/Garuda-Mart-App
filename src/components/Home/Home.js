@@ -10,12 +10,12 @@ const Home = () => {
     <div>
     <div>
 
-      <div className="flex items-center justify-between pl-20 pr-20">
+      {/* <div className="flex items-center justify-between pl-20 pr-20">
         <h1>hey there</h1>
         <div className="imgHome bg-saltpan rounded-full w-[13rem] h-[13rem] flex items-center jsutify-center">
         <img className=" w-[10rem]" src={cycle1} alt="cycle" />
         </div>
-      </div>
+      </div> */}
 
 {/* <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
