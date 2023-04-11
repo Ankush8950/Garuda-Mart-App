@@ -4,10 +4,11 @@ import logo from "../../image/logo-garudmart.png";
 import cart from "../../image/cart.png";
 import styles from "./Navbar.css";
 import Add_user from "../../image/add-user.png"
+import {BsSearch} from "react-icons/bs"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-saltpan h-20 p-10">
+    <div className="navbar bg-saltpan h-20 p-10 sticky top-0 z-10">
       <div className="navbar-start">
         <NavLink
           to="/"
@@ -75,6 +76,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
+      <div className="mr-5 cursor-pointer">
+      <BsSearch  size={20}/>
+      </div>
       <button>
           <img className="w-7 mr-5" src={Add_user} alt="" />
       </button>

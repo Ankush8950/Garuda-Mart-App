@@ -10,8 +10,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-    <div className="flex w-full items-center justify-center">
-      <div className="flex flex-col w-1/3">
+    <div className="flex flex-col md:flex-row  w-full items-center justify-center mt-20">
+      <div className="flex flex-col w-full md:w-1/3 pl-20 pr-20 md:p-0">
         <div className="flex items-center">
           <img className="w-15" src={logo} alt="" />
           <h1 className="font-bold text-xl ml-5">Garuda Mart</h1>
@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="ml-10 flex items-center justify-between w-1/2">
+      <div className="ml-10 flex items-center justify-between w-full md:w-1/2 p-20 md:p-0">
         <div>
           <h1 className="font-semibold">Company</h1>
           <div className="link mt-5 flex flex-col ">

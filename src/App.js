@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 import Pages from './components/Pages';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Message from './components/message/Message';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/pages' element={<Pages />} /> 
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Message />
       <Footer />
     </div>
   );

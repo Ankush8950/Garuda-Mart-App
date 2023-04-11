@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import img from "../../image/contact-bg.png";
 import Card from "./Card/Card";
-import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router-dom";
+
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [isVisible, setVisible] = useState(false);
+
   return (
     <div>
       <div
