@@ -61,7 +61,7 @@ const Home = () => {
         {ProductObj.map((items)=>{
           return (
             <div className="w-[250px] h-[300px] cursor-pointer">
-                <div className=" m-3 flex items-center justify-center  rounded-lg" style={{backgroundColor: items.color}}>
+                <div className=" m-3 flex items-center justify-center shadow-2xl  rounded-lg" style={{backgroundColor: items.color}}>
                   <img className="w-[200px] h-[250px]" src={items.Image} alt="" />
                 </div>
                 <h1 className="ml-3 font-medium text-sm">{items.name}</h1>
@@ -87,7 +87,7 @@ const Home = () => {
             <button className="font-medium text-sm">Latest Product</button>
           </div>
         </div>
-        <div className="flex flex-wrap m-2 items-center justify-center ">
+        <div className="flex flex-wrap m-2 items-center justify-center">
           {ProductObj.map((items, index) => {
             return <ProductCart items={items} key={items.id} />;
           })}

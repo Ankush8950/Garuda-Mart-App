@@ -8,12 +8,12 @@ import "./ProductCart.css";
 
 const ProductCart = ({ items }) => {
   return (
-    <div className="w-[270px] h-[330px] flex flex-col  cursor-pointer m-3 overflow-hidden">
+    <div className="w-[270px] h-[330px] flex flex-col rounded-lg cursor-pointer m-3 overflow-hidden">
       <div className="bg-lightgray w-full h-[240px] flex flex-col items-center justify-center shadow-md mb-5 relative productImg">
         <img className="productImg opacity-70" src={items.Image} alt="" />
 
         <div className="w-full  showPage">
-          <button className="flex items-center justify-center w-full bg-black hover:bg-red font-roboto font-medium text-white p-2">
+          <button className="flex items-center justify-center w-full bg-black hover:bg-red font-roboto font-medium text-white p-2 rounded">
             <BsFillCartCheckFill size={20} />
             <h1 className="ml-2"> Add to cart</h1>
           </button>
