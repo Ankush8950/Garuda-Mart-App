@@ -2,7 +2,6 @@ import React from "react";
 import ProductCart from "./card/ProductCart";
 import ProductObj from "./card/ProductObj.js";
 import cycle1 from "../../image/cycle1.png"
-import cycle2 from "../../image/cycle2.png"
 import "./Home.css"
 
 
