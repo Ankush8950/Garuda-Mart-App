@@ -24,18 +24,18 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center justify-left mt-5 space-x-4">
-          <a className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
+          <Link className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
             <img className="w-5" src={facebook} alt="facebook" />
-          </a>
-          <a className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
+          </Link>
+          <Link className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
             <img className="w-5" src={twitter} alt="twitter" />
-          </a>
-          <a className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
+          </Link>
+          <Link className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
             <img className="w-5" src={linkedin} alt="linkedin" />
-          </a>
-          <a className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
+          </Link>
+          <Link className="w-10 h-10 rounded-full bg-white shadow-xl shadow-stone-500 cursor-pointer flex items-center justify-center">
             <img className="w-5" src={youtube} alt="youTube" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="ml-10 flex items-center justify-between w-full md:w-1/2 p-20 md:p-0">

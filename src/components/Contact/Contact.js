@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import img from "../../image/contact-bg.png";
 import Card from "./Card/Card";
 
