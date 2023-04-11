@@ -1,0 +1,19 @@
+.menu a{
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    transition: all 100ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.logo{
+    border-bottom: none !important;
+}
+
+.menu a:hover{
+    border-bottom: 2px solid rgb(79, 79, 79);
+     transform: scale(1);
+}
+
+.active{
+    border-bottom: 2px solid rgb(79, 79, 79);   
+}
