@@ -98,8 +98,8 @@ const Navbar = () => {
           <img className="w-7" src={cart} alt="" />
         </button>
       </div>
-      <div className="ml-5 cursor-pointer">
-        {hamberger ? <AiOutlineClose size={25} onClick={()=>setHamberger(!hamberger)}/> : <FcMenu size={25} />}
+      <div className="block lg:hidden ml-5 cursor-pointer " onClick={()=>setHamberger(!hamberger)}>
+        {hamberger ? <AiOutlineClose size={25} /> : <FcMenu size={25} />}
       </div>
     </div>
   );
