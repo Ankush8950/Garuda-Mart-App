@@ -11,9 +11,11 @@
 
 .menu a:hover{
     border-bottom: 2px solid rgb(79, 79, 79);
-     transform: scale(1);
+    transform: scale(1);
+    color: red;
 }
 
 .active{
-    border-bottom: 2px solid rgb(79, 79, 79);   
+    border-bottom: 2px solid rgb(79, 79, 79);  
+    color: red !important; 
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCart from "./card/ProductCart";
-import ProductObj from "./card/ProductObj.js";
+import ProductCart from "./cart/ProductCart";
+import ProductObj from "./cart/ProductObj.js";
 import "./Home.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,6 +42,7 @@ const Home = () => {
   };
   return (
     <div>
+    {/* Home page */}
   <div className="w-full h-screen flex items-center justify-between font-roboto pl-10 pr-10 bg-saltpan">
       <div className="flex flex-col ">
       <div className="flex items-center">
@@ -55,6 +56,8 @@ const Home = () => {
         <img className="w-[500px]" src={homeLed} alt="led" />
       </div>
   </div>
+
+  {/* slider */}
 
     <div className="mt-20 slider font-roboto">
       <Slider {...settings} className="slider">

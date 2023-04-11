@@ -2,7 +2,7 @@ import refrigerator1 from "../../../image/frigerator1.png";
 import refrigerator2 from "../../../image/refrigerator2.png";
 import refrigerator3 from "../../../image/pngegg.png";
 import refrigerator4 from "../../../image/refrigerator5.png";
-import refrigerator5 from "../../../image/pngwing.com (1).png";
+import refrigerator5 from "../../../image/pngegg (1).png";
 
 
 const product = [
