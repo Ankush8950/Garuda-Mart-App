@@ -10,7 +10,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-    <div className="flex flex-col md:flex-row  w-full items-center justify-center mt-20">
+    <div className="flex flex-col md:flex-row  w-full items-center justify-center mt-20 font-roboto">
       <div className="flex flex-col w-full md:w-1/3 pl-20 pr-20 md:p-0">
         <div className="flex items-center">
           <img className="w-15" src={logo} alt="" />
