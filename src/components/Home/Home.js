@@ -1,23 +1,55 @@
 import React from "react";
 import ProductCart from "./card/ProductCart";
 import ProductObj from "./card/ProductObj.js";
-import cycle1 from "../../image/cycle1.png"
-import "./Home.css"
-
+import cycle1 from "../../image/cycle1.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Home.css";
+import Slider from "react-slick";
 
 const Home = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          rows: 2,
+        },
+      },
+    ],
+  };
   return (
     <div>
-    <div>
-
-      {/* <div className="flex items-center justify-between pl-20 pr-20">
+      <div>
+        {/* <div className="flex items-center justify-between pl-20 pr-20">
         <h1>hey there</h1>
         <div className="imgHome bg-saltpan rounded-full w-[13rem] h-[13rem] flex items-center jsutify-center">
         <img className=" w-[10rem]" src={cycle1} alt="cycle" />
         </div>
       </div> */}
 
-{/* <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        {/* <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src={cycle1} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
@@ -55,28 +87,31 @@ const Home = () => {
         </span>
     </button>
 </div> */}
+      </div>
 
-
-
-    </div>
-
-    {/* product page */}
+      {/* product page */}
       <div className="">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between p-10 ">
-        <div className="flex items-center">
-        <div className="w-1 h-10 bg-red"></div>
-          <h1 className="font-bold text-3xl ml-2">Popular Products</h1>
+          <div className="flex items-center">
+            <div className="w-1 h-10 bg-red"></div>
+            <h1 className="font-bold text-3xl ml-2">Popular Products</h1>
           </div>
           <div className="flex space-x-10 font-roboto mt-5 md:mt-0">
-            <button className="font-medium text-sm text-red border-b-2">Top Rated</button>
+            <button className="font-medium text-sm text-red border-b-2">
+              Top Rated
+            </button>
             <button className="font-medium text-sm">Best Selling</button>
             <button className="font-medium text-sm">Latest Product</button>
           </div>
         </div>
-        <div className="flex flex-wrap m-2 items-center justify-center ">
+        <div >
+        <Slider {...settings} className="flex flex-wrap m-2 items-center justify-center ">
           {ProductObj.map((items, index) => {
-            return <ProductCart items={items} key={items.id} />;
+            return (
+                <ProductCart items={items} key={items.id} />
+            );
           })}
+          </Slider>
         </div>
       </div>
     </div>
