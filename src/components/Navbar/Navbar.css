@@ -13,9 +13,17 @@
     border-bottom: 2px solid rgb(79, 79, 79);
     transform: scale(1);
     color: red;
+    /* background-color: #303030b1; */
 }
 
 .active{
     border-bottom: 2px solid rgb(79, 79, 79);  
     color: red !important; 
 }
+
+/* @media screen and (max-width:1076px) {
+   .active{
+        border-bottom-width: ;
+   }
+} */
+

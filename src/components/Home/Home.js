@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div>
     {/* Home page */}
-  <div className="w-full h-screen flex items-center justify-between font-roboto pl-10 pr-10 bg-saltpan">
+  <div className="w-full min-h-full md:h-screen  flex flex-col-reverse md:flex-row items-center justify-between font-roboto pl-10 pr-10 bg-saltpan pb-10 md:pb-0">
       <div className="flex flex-col ">
       <div className="flex items-center">
         <div className="w-[2px] h-8 bg-red"></div>
@@ -63,9 +63,9 @@ const Home = () => {
       <Slider {...settings} className="slider">
         {ProductObj.map((items)=>{
           return (
-            <div className="w-[250px] h-[300px] cursor-pointer">
+            <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[300px] cursor-pointer">
                 <div className=" m-3 flex items-center justify-center shadow-2xl  rounded-lg" style={{backgroundColor: items.color}}>
-                  <img className="w-[200px] h-[250px]" src={items.Image} alt="" />
+                  <img className="w-[200px] h-[170px] sm:h-[250px]" src={items.Image} alt="" />
                 </div>
                 <h1 className="ml-3 font-medium text-sm">{items.name}</h1>
             </div>

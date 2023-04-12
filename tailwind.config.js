@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}", 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   theme: {
      screens: {
-       sm: '580px',
+       sm: '600px',
        md: '800px',
        lg: '1076px',
        xl: '1440px',
@@ -18,6 +18,7 @@ module.exports = {
         red: "#F50963",
         gray: "#F5F5F8",
         lightgray: "#F6F8FA",
+        lightblack: "#303030b1"
       },
     },
   },

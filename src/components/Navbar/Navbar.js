@@ -7,6 +7,7 @@ import Add_user from "../../image/add-user.png";
 import { BsSearch } from "react-icons/bs";
 import { FcMenu } from "react-icons/fc";
 import { AiOutlineClose } from "react-icons/ai";
+import SideNavbar from "../SideNavbar/SideNavbar"
 
 const Navbar = () => {
   const [hamberger, setHamberger] = useState(false);
@@ -100,6 +101,11 @@ const Navbar = () => {
       </div>
       <div className="block lg:hidden ml-5 cursor-pointer " onClick={()=>setHamberger(!hamberger)}>
         {hamberger ? <AiOutlineClose size={25} /> : <FcMenu size={25} />}
+      </div>
+      <div className="">
+        {
+          hamberger ? <SideNavbar setHamberger={setHamberger} hamberger={hamberger} /> : ""
+        }
       </div>
     </div>
   );

@@ -1,11 +1,7 @@
-
-.productImg{
+.productImg {
   width: 270px !important;
   height: 260px !important;
 }
-
-
-
 
 .tooltip {
   position: relative;
@@ -47,4 +43,11 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .productImg {
+    width: 200px !important;
+    height: 200px !important;
+  }
 }
