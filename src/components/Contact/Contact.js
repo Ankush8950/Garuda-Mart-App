@@ -6,27 +6,27 @@ import Card from "./Card/Card";
 const Contact = () => {
 
   return (
-    <div>
+    <div className="w-full min-h-screen">
       <div
-        className="w-full h-screen  flex  flex-col items-center  pt-[5rem]"
+        className="w-full min-h-screen lg:h-screen  flex  flex-col items-center  pt-[5rem]"
         style={{ backgroundImage: `url(${img})`, backgroundPosition: "center" }}
       >
         <h1 className="text-center font-normal uppercase font-roboto">
           get to know us
         </h1>
-        <h1 className="font-bold text-7xl text-center w-[50rem] font-roboto leading-tight">
+        <h1 className="font-bold text-4xl md:text-7xl text-center  lg:w-[50rem] font-roboto leading-tight">
           Have a project in mind? Let’s talk.
         </h1>
-        <div>
+        <div className="">
           <Card />
         </div>
       </div>
-      <div className="w-full h-screen mt-[10rem] ">
-        <div className="shadow-2xl rounded-xl m-[8rem] p-20">
+      <div className="w-full">
+        <div className="shadow-2xl rounded-xl m-[1rem] sm:m-[4rem] lg:m-[8rem] p-5 sm:p-10 lg:p-20">
           <form className="space-y-6">
             <div className="flex flex-wrap flex-col">
-              <div className="mt-1 flex space-x-3 ">
-                <div class="relative w-1/2 h-14 mt-5">
+              <div className="mt-1 flex flex-col sm:flex-row  sm:space-x-3 ">
+                <div class="relative w-full sm:w-1/2 h-14 mt-5">
                   <input
                     type="text"
                     id="floating_outlined"
@@ -40,7 +40,7 @@ const Contact = () => {
                     Enter your name
                   </label>
                 </div>
-                <div class="relative w-1/2 h-14 mt-5">
+                <div class="relative w-full sm:w-1/2 h-14 mt-5">
                   <input
                     type="text"
                     id="floating_outlined"
@@ -55,8 +55,8 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
-              <div className="mt-1 flex space-x-3 ">
-                <div class="relative w-1/2 h-14 mt-5">
+              <div className="mt-1 flex flex-col sm:flex-row sm:space-x-3 ">
+                <div class="relative w-full sm:w-1/2 h-14 mt-5">
                   <input
                     type="text"
                     id="floating_outlined"
@@ -70,7 +70,7 @@ const Contact = () => {
                     Mobile no
                   </label>
                 </div>
-                <div class="relative w-1/2 h-14 mt-5">
+                <div class="relative w-full sm:w-1/2 h-14 mt-5">
                   <input
                     type="text"
                     id="floating_outlined"

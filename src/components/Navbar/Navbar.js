@@ -21,7 +21,7 @@ const Navbar = () => {
           <h1 className="font-medium ml-1 font-roboto">Garuda Mart</h1>
         </NavLink>
       </div>
-      <div className="navbar-center hidden lg:flex font-roboto opacity-75">
+      <div className="navbar-center  flex flex-col lg:block hidden lg:flex font-roboto opacity-75">
         <ul className="menu menu-horizontal px-1 font-medium text-base">
           <li
             className={({ isActive }) => (isActive ? `${styles.active}` : "")}
