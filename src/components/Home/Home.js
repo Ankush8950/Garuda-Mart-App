@@ -49,7 +49,7 @@ const Home = () => {
         <div className="w-[2px] h-8 bg-red"></div>
         <h1 className="font-normal text-lg ml-3">Best product Freezers</h1>
         </div>
-        <h1 className="font-bold text-5xl w-[450px] mt-5 leading-tight tracking-wide		">Televisions with  Smart Technology</h1>
+        <h1 className="font-bold text-3xl sm:text-5xl w-full sm:w-[450px] mt-5 leading-tight tracking-wide">Televisions with  Smart Technology</h1>
         <button className="flex items-center justify-center border-2 font-normal text-sm rounded-lg w-[150px] p-2 mt-5 hover:bg-black hover:text-white ">Shop Now <BsArrowRightShort size={25}/> </button>
       </div>
       <div>
