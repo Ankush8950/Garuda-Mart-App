@@ -17,7 +17,7 @@ const Home = () => {
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
-    arrows: true,
+    arrows: false,
     autoplaySpeed: 2000,
     responsive: [
       {

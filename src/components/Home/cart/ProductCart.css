@@ -45,9 +45,4 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
-  .productImg {
-    width: 200px !important;
-    height: 200px !important;
-  }
-}
+

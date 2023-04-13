@@ -18,8 +18,8 @@ const Navbar = () => {
           to="/"
           className="logo flex items-center normal-case text-xl border-none"
         >
-          <img className="w-10 h-10" src={logo} alt="" />
-          <h1 className="font-medium ml-1 font-roboto">Garuda Mart</h1>
+          <img className="w-7 sm:w-10 h-7 sm:h-10" src={logo} alt="" />
+          <h1 className="font-medium ml-1 font-roboto text-base sm:text-xl">Garuda Mart</h1>
         </NavLink>
       </div>
       <div className="navbar-center  flex flex-col lg:block hidden lg:flex font-roboto opacity-75">
@@ -89,17 +89,17 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="mr-5 cursor-pointer">
-          <BsSearch size={20} />
+        <div className="mr-3 sm:mr-5 cursor-pointer text-base sm:text-xl">
+          <BsSearch />
         </div>
         <button>
-          <img className="w-7 mr-5" src={Add_user} alt="" />
+          <img className="w-5 sm:w-7 mr-3 sm:mr-5" src={Add_user} alt="" />
         </button>
         <button>
-          <img className="w-7" src={cart} alt="" />
+          <img className="w-5 sm:w-7" src={cart} alt="" />
         </button>
       </div>
-      <div className="block lg:hidden ml-5 cursor-pointer " onClick={()=>setHamberger(!hamberger)}>
+      <div className="block lg:hidden ml-3 sm:ml-5 cursor-pointer " onClick={()=>setHamberger(!hamberger)}>
         {hamberger ? <AiOutlineClose size={25} /> : <FcMenu size={25} />}
       </div>
       <div className="">
